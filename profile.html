@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Author — Deadlock Hero Codex</title>
+    <meta
+      name="description"
+      content="Profile page of the author behind the Deadlock Hero Codex fan page: photo, programme of study, skills, and contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.webp" type="image/webp" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Deadlock Hero Codex — back to home">
+        <img class="brand__mark" src="assets/logo.webp" alt="" aria-hidden="true" />
+        <span class="brand__text">
+          <span class="brand__word">Deadlock</span>
+          <span class="brand__sub">Hero Codex</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="index.html#about">About</a>
+        <a class="site-nav__link" href="index.html#roster">Heroes</a>
+        <a class="site-nav__link" href="index.html#stats">Stats</a>
+        <a class="site-nav__link" href="index.html#media">Media</a>
+        <a class="site-nav__link" href="index.html#picks">Picks</a>
+        <a class="site-nav__link" href="index.html#review">Reviews</a>
+        <a class="site-nav__link site-nav__link--cta" href="#profile">Profile</a>
+      </nav>
+
+      <button
+        class="bgm-toggle"
+        id="bgm-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Toggle background music"
+      >
+        <span class="bgm-toggle__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="bgm-toggle__label">Sound</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero hero--slim" aria-label="Author introduction">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="character/billy-render.webp" alt="" />
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Profile · About the Author</p>
+          <h1 class="hero__title">Muhammad Kevin</h1>
+        </div>
+      </section>
+
+      <section class="section" id="profile">
+        <header class="section__head">
+          <h2 class="section__title">Who Built This</h2>
+        </header>
+
+        <div class="profile">
+          <figure class="profile__photo">
+            <img src="assets/avatar.jpeg" alt="Placeholder avatar of the author" width="400" height="400" />
+          </figure>
+
+          <div class="profile__body">
+            <h3 class="profile__name">Muhammad Kevin</h3>
+            <p class="profile__meta">Diploma 3 in Information Systems</p>
+
+            <h4 class="profile__label">Short Bio</h4>
+            <p class="profile__text">
+              Computer science student who consumes a lot of caffeine and is sleep deprived.
+            </p>
+
+            <h4 class="profile__label">Skills & Interests</h4>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>React Native (Expo)</li>
+              <li>JavaScript (ES6+)</li>
+              <li>PHP & Laravel</li>
+              <li>Games</li>
+            </ul>
+
+            <h4 class="profile__label">Contact &amp; Social Media</h4>
+            <ul class="social-list">
+              <li>
+                <a href="mailto:muhammadkevin0703@gmail.com">muhammadkevin0703@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kev.viin_" target="_blank" rel="noopener">
+                  Instagram — @kev.viin_
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RyuVyyn" target="_blank" rel="noopener">
+                  GitHub — RyuVyyn
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn" href="index.html">← Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Hero Codex</h3>
+          <p class="site-footer__text">
+            A fan-made project built for the Frontend Basic Mini Project. Deadlock and all related assets
+            are the property of Valve.
+          </p>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#roster">Hero roster</a></li>
+            <li><a href="index.html#review">Leave a review</a></li>
+            <li><a href="#top">Back to top</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Elsewhere</h3>
+          <ul class="footer-links">
+            <li><a href="https://deadlock.wiki/Heroes" target="_blank" rel="noopener">Deadlock Wiki</a></li>
+            <li><a href="https://www.playdeadlock.com" target="_blank" rel="noopener">Official Deadlock Site</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="site-footer__bar">
+        Fan-made · Not affiliated with Valve · <a href="index.html">Back to Home</a>
+      </p>
+    </footer>
+
+    <audio id="bgm" src="music/theme.mp3" loop preload="metadata"></audio>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

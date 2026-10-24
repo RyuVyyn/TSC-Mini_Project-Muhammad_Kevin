@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deadlock — Hero Codex Fan Page</title>
+    <meta
+      name="description"
+      content="A fan page for Deadlock by Valve: browse every hero, their roles, signature abilities, game facts, and recommended picks."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.webp" type="image/webp" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Deadlock Hero Codex — back to top">
+        <img class="brand__mark" src="assets/logo.webp" alt="" aria-hidden="true" />
+        <span class="brand__text">
+          <span class="brand__word">Deadlock</span>
+          <span class="brand__sub">Hero Codex</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="#about">About</a>
+        <a class="site-nav__link" href="#roster">Heroes</a>
+        <a class="site-nav__link" href="#stats">Stats</a>
+        <a class="site-nav__link" href="#media">Media</a>
+        <a class="site-nav__link" href="#picks">Picks</a>
+        <a class="site-nav__link" href="#review">Reviews</a>
+        <a class="site-nav__link site-nav__link--cta" href="profile.html">Profile</a>
+      </nav>
+
+      <button
+        class="bgm-toggle"
+        id="bgm-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Toggle background music"
+      >
+        <span class="bgm-toggle__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="bgm-toggle__label">Sound</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Introduction">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="assets/third-eye-supply.webp" alt="" />
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Fan Page · Valve · 6v6 Hero Shooter</p>
+          <h1 class="hero__title">Deadlock</h1>
+          <p class="hero__tagline">
+            A fan-made codex for the Cursed Apple. Browse every hero, their role, their abilities, and
+            their story — all in one place.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#roster">Explore the Roster</a>
+            <a class="btn btn--ghost" href="#picks">Recommended Heroes</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <header class="section__head">
+          <h2 class="section__title">About the Game</h2>
+          <p class="section__sub">What Deadlock is, and why the Cursed Apple never sleeps.</p>
+        </header>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              <strong>Deadlock</strong> is a 6v6 third-person hero shooter and MOBA developed and published
+              by <em>Valve</em>. Two teams of six heroes battle across the streets of an alternate
+              twentieth-century New York — the Cursed Apple — to summon their Patron and shatter the
+              enemy's.
+            </p>
+            <p>
+              Matches blend shooter fundamentals with MOBA progression. Players collect Souls, buy items
+              from the Curiosity Shop, level up four unique abilities per hero, and push lane by lane
+              toward the enemy base while managing objectives like the Mid-Boss and the Soul Urn.
+            </p>
+            <p>
+              The game is currently available as an invite-based playtest on Steam, with a steady stream of
+              balance patches and new heroes. One of the most recent additions is
+              <strong>Violet</strong>, who joined the roster on October 16, 2026.
+            </p>
+          </div>
+
+          <aside class="about__facts" aria-label="Quick facts">
+            <h3 class="about__facts-title">Quick Facts</h3>
+            <ul class="fact-list">
+              <li><span>Developer</span><b>Valve</b></li>
+              <li><span>Publisher</span><b>Valve</b></li>
+              <li><span>Genre</span><b>Third-person shooter · MOBA</b></li>
+              <li><span>Players</span><b>6 vs 6 (twelve heroes per match)</b></li>
+              <li><span>Setting</span><b>The Cursed Apple, alt-20th-century New York</b></li>
+              <li><span>Roster</span><b>44 playable heroes</b></li>
+              <li><span>Platform</span><b>PC (Steam)</b></li>
+              <li><span>Status</span><b>Invite-only playtest</b></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="select" id="roster">
+        <div class="select__side">
+          <header class="select__head">
+            <h2 class="select__title">Select Hero</h2>
+            <span class="select__count">44 Heroes</span>
+          </header>
+
+          <ul class="roster__grid" id="roster-list">
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="abrams" aria-pressed="false" title="Abrams"><img src="character/abrams.webp" alt="Abrams" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="apollo" aria-pressed="false" title="Apollo"><img src="character/apollo.webp" alt="Apollo" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="baba" aria-pressed="false" title="Baba"><img src="character/baba.webp" alt="Baba" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="bebop" aria-pressed="false" title="Bebop"><img src="character/bebop.webp" alt="Bebop" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="billy" aria-pressed="false" title="Billy"><img src="character/billy.webp" alt="Billy" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="calico" aria-pressed="false" title="Calico"><img src="character/calico.webp" alt="Calico" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="celeste" aria-pressed="false" title="Celeste"><img src="character/celeste.webp" alt="Celeste" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="deadman-danny" aria-pressed="false" title="Deadman Danny"><img src="character/deadman-danny.webp" alt="Deadman Danny" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="the-doorman" aria-pressed="false" title="The Doorman"><img src="character/the-doorman.webp" alt="The Doorman" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="drifter" aria-pressed="false" title="Drifter"><img src="character/drifter.webp" alt="Drifter" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="dynamo" aria-pressed="false" title="Dynamo"><img src="character/dynamo.webp" alt="Dynamo" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="graves" aria-pressed="false" title="Graves"><img src="character/graves.webp" alt="Graves" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="grey-talon" aria-pressed="false" title="Grey Talon"><img src="character/grey-talon.webp" alt="Grey Talon" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="haze" aria-pressed="false" title="Haze"><img src="character/haze.webp" alt="Haze" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="holliday" aria-pressed="false" title="Holliday"><img src="character/holliday.webp" alt="Holliday" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="infernus" aria-pressed="false" title="Infernus"><img src="character/infernus.webp" alt="Infernus" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="ivy" aria-pressed="false" title="Ivy"><img src="character/ivy.webp" alt="Ivy" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="kelvin" aria-pressed="false" title="Kelvin"><img src="character/kelvin.webp" alt="Kelvin" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="lady-geist" aria-pressed="false" title="Lady Geist"><img src="character/lady-geist.webp" alt="Lady Geist" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="lash" aria-pressed="false" title="Lash"><img src="character/lash.webp" alt="Lash" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="mcginnis" aria-pressed="false" title="McGinnis"><img src="character/mcginnis.webp" alt="McGinnis" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="mina" aria-pressed="false" title="Mina"><img src="character/mina.webp" alt="Mina" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="mirage" aria-pressed="false" title="Mirage"><img src="character/mirage.webp" alt="Mirage" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="mo-and-krill" aria-pressed="false" title="Mo & Krill"><img src="character/mo-and-krill.webp" alt="Mo & Krill" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="nurse-harrow" aria-pressed="false" title="Nurse Harrow"><img src="character/nurse-harrow.webp" alt="Nurse Harrow" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="paige" aria-pressed="false" title="Paige"><img src="character/paige.webp" alt="Paige" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="paradox" aria-pressed="false" title="Paradox"><img src="character/paradox.webp" alt="Paradox" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="pocket" aria-pressed="false" title="Pocket"><img src="character/pocket.webp" alt="Pocket" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="rat-king" aria-pressed="false" title="Rat King"><img src="character/rat-king.webp" alt="Rat King" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="rem" aria-pressed="false" title="Rem"><img src="character/rem.webp" alt="Rem" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="seven" aria-pressed="false" title="Seven"><img src="character/seven.webp" alt="Seven" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="shiv" aria-pressed="false" title="Shiv"><img src="character/shiv.webp" alt="Shiv" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="silver" aria-pressed="false" title="Silver"><img src="character/silver.webp" alt="Silver" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="sinclair" aria-pressed="false" title="Sinclair"><img src="character/sinclair.webp" alt="Sinclair" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="solomon" aria-pressed="false" title="Solomon"><img src="character/solomon.webp" alt="Solomon" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="venator" aria-pressed="false" title="Venator"><img src="character/venator.webp" alt="Venator" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="victor" aria-pressed="false" title="Victor"><img src="character/victor.webp" alt="Victor" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="vindicta" aria-pressed="false" title="Vindicta"><img src="character/vindicta.webp" alt="Vindicta" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile is-active" data-slug="violet" aria-pressed="true" title="Violet"><img src="character/violet.webp" alt="Violet" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="viscous" aria-pressed="false" title="Viscous"><img src="character/viscous.webp" alt="Viscous" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="vyper" aria-pressed="false" title="Vyper"><img src="character/vyper.webp" alt="Vyper" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="warden" aria-pressed="false" title="Warden"><img src="character/warden.webp" alt="Warden" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="wraith" aria-pressed="false" title="Wraith"><img src="character/wraith.webp" alt="Wraith" width="300" height="400" loading="lazy" /></button></li>
+            <li class="roster__cell"><button type="button" class="hero-tile" data-slug="yamato" aria-pressed="false" title="Yamato"><img src="character/yamato.webp" alt="Yamato" width="300" height="400" loading="lazy" /></button></li>
+          </ul>
+        </div>
+
+        <div class="select__stage" id="hero-stage" style="--accent: #6a4a8a">
+          <img
+            class="select__art"
+            id="hero-art"
+            src="character/violet-render.webp"
+            alt="Violet, in-game render"
+          />
+
+          <div class="select__info" aria-live="polite">
+            <div class="select__text">
+              <p class="select__eyebrow">The Cursed Apple · Hero</p>
+              <h3 class="select__name" id="hero-name">Violet</h3>
+              <ul class="role-tags" id="hero-roles">
+                <li>Ambitious</li>
+                <li>Nimble</li>
+                <li>Creative</li>
+              </ul>
+              <p class="select__lore" id="hero-lore">
+                Violet is a young and talented art student, ready to face her self-doubts and make a name
+                for herself in the competitive world of fine arts. With ink and paint, she empowers her
+                allies with one stroke while disrupting her foes with another.
+              </p>
+            </div>
+
+            <ul class="ability-icons" id="hero-abilities">
+              <li class="ability-icon">
+                <span class="ability-icon__glyph">
+                  <img src="assets/icons/violet-1.webp" alt="" width="90" height="90" />
+                </span>
+                <span class="ability-icon__name">Living Ink</span>
+              </li>
+              <li class="ability-icon">
+                <span class="ability-icon__glyph">
+                  <img src="assets/icons/violet-2.webp" alt="" width="90" height="90" />
+                </span>
+                <span class="ability-icon__name">Flow State</span>
+              </li>
+              <li class="ability-icon">
+                <span class="ability-icon__glyph">
+                  <img src="assets/icons/violet-3.webp" alt="" width="90" height="90" />
+                </span>
+                <span class="ability-icon__name">Still Life</span>
+              </li>
+              <li class="ability-icon">
+                <span class="ability-icon__glyph">
+                  <img src="assets/icons/violet-4.webp" alt="" width="90" height="90" />
+                </span>
+                <span class="ability-icon__name">Abstract Landscape</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stats">
+        <header class="section__head">
+          <h2 class="section__title">Hero Reference</h2>
+          <p class="section__sub">A quick comparison of a few heroes, from bruisers to assassins.</p>
+        </header>
+
+        <table class="stat-table">
+          <caption>Selected heroes — roles, base weapon damage, and signature ability</caption>
+          <thead>
+            <tr>
+              <th scope="col">Hero</th>
+              <th scope="col">Roles</th>
+              <th scope="col">Damage / sec</th>
+              <th scope="col">Signature ability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Abrams</th><td>Tank · Brawler · Bull-Headed</td><td>51</td><td>Siphon Life</td></tr>
+            <tr><th scope="row">Haze</th><td>Assassin · Stealthy · Lethal</td><td>50</td><td>Sleep Dagger</td></tr>
+            <tr><th scope="row">Infernus</th><td>Arsonist · Explosive · Burn Rubber</td><td>52</td><td>Napalm</td></tr>
+            <tr><th scope="row">Ivy</th><td>Team-up · Disruptor · Rock Solid</td><td>61</td><td>Entangling Thorns</td></tr>
+            <tr><th scope="row">Kelvin</th><td>Protector · Explorer · Ice Cold</td><td>71</td><td>Frost Grenade</td></tr>
+            <tr><th scope="row">Lady Geist</th><td>Lifesteal · Self Damage · Fatale</td><td>44</td><td>Essence Bomb</td></tr>
+            <tr><th scope="row">Rat King</th><td>Scrappy · Regal · Tenacious</td><td>60</td><td>Scrap Grenade</td></tr>
+            <tr><th scope="row">Violet</th><td>Ambitious · Nimble · Creative</td><td>46.2</td><td>Living Ink</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Base weapon damage per second as reported by the Deadlock Wiki.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section class="section" id="media">
+        <header class="section__head">
+          <h2 class="section__title">Media</h2>
+          <p class="section__sub">Hero artwork and a short showcase from the streets of the Cursed Apple.</p>
+        </header>
+
+        <div class="media">
+          <figure class="media__item">
+            <img src="character/abrams-render.webp" alt="In-game render of Abrams, the detective hero" />
+            <figcaption>In-game hero render — <strong>Abrams</strong>.</figcaption>
+          </figure>
+
+          <figure class="media__item media__item--video">
+            <video
+              class="media__video"
+              controls
+              preload="metadata"
+              poster="video/hero-showcase-poster.jpg"
+            >
+              <source src="video/hero-showcase.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>A short hero showcase clip rendered from in-game artwork.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="picks">
+        <header class="section__head">
+          <h2 class="section__title">Recommended Heroes</h2>
+          <p class="section__sub">Three heroes worth trying first — including the newest arrival.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <img class="card__img" src="character/rat-king-render.webp" alt="In-game render of Rat King" />
+            <div class="card__body">
+              <h3 class="card__title">Rat King</h3>
+              <p class="card__roles">Scrappy · Regal · Tenacious</p>
+              <p class="card__text">
+                A ruler of the gutters who swarms the battlefield with rats and scrap. Tenacious in long
+                fights, and surprisingly regal about it.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="character/graves-render.webp" alt="In-game render of Graves" />
+            <div class="card__body">
+              <h3 class="card__title">Graves</h3>
+              <p class="card__roles">Morbid · Area Denial · Necromancer</p>
+              <p class="card__text">
+                A morbid necromancer who denies space with grasping hands and jars of the dead. Punishes
+                anyone who steps into his territory.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--new">
+            <span class="card__badge">New</span>
+            <img class="card__img" src="character/violet-render.webp" alt="In-game render of Violet" />
+            <div class="card__body">
+              <h3 class="card__title">Violet</h3>
+              <p class="card__roles">Ambitious · Nimble · Creative</p>
+              <p class="card__text">
+                Added October 16, 2026. An art student who paints reality — steering empowered bullets,
+                drawing walls of ink, and trapping enemies in her latest masterpiece.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="review">
+        <header class="section__head">
+          <h2 class="section__title">Leave a Review</h2>
+          <p class="section__sub">Tell us what you think of the codex and which hero you main.</p>
+        </header>
+
+        <form class="review-form" action="#" method="post">
+          <div class="field">
+            <label for="rv-name">Display name</label>
+            <input id="rv-name" name="name" type="text" placeholder="e.g. ParadoxEnjoyer" required />
+          </div>
+
+          <div class="field">
+            <label for="rv-email">Email</label>
+            <input id="rv-email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <fieldset class="field">
+            <legend class="field__label">How would you rate this codex?</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="rating" value="5" checked /> Excellent</label>
+              <label class="choice"><input type="radio" name="rating" value="3" /> Good</label>
+              <label class="choice"><input type="radio" name="rating" value="1" /> Needs work</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="rv-fav">Favourite hero</label>
+            <select id="rv-fav" name="favourite">
+              <option value="rat-king">Rat King</option>
+              <option value="graves">Graves</option>
+              <option value="violet">Violet</option>
+              <option value="abrams">Abrams</option>
+              <option value="haze">Haze</option>
+            </select>
+          </div>
+
+          <fieldset class="field">
+            <legend class="field__label">What should we add next?</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="checkbox" name="topics" value="items" checked /> Item builds</label>
+              <label class="choice"><input type="checkbox" name="topics" value="maps" /> Map guides</label>
+              <label class="choice"><input type="checkbox" name="topics" value="patches" /> Patch notes</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="rv-message">Your review</label>
+            <textarea id="rv-message" name="message" rows="4" placeholder="Share your thoughts about the codex..."></textarea>
+          </div>
+
+          <button class="btn-submit" type="submit">Send Review</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Hero Codex</h3>
+          <p class="site-footer__text">
+            A fan-made project built for the Frontend Basic Mini Project. Deadlock and all related assets
+            are the property of Valve.
+          </p>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#top">Back to top</a></li>
+            <li><a href="#roster">Hero roster</a></li>
+            <li><a href="#review">Leave a review</a></li>
+            <li><a href="profile.html">About the author</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__title">Elsewhere</h3>
+          <ul class="footer-links">
+            <li><a href="https://deadlock.wiki/Heroes" target="_blank" rel="noopener">Deadlock Wiki</a></li>
+            <li><a href="https://www.playdeadlock.com" target="_blank" rel="noopener">Official Deadlock Site</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WkGDC3idX1E" target="_blank" rel="noopener">Soundtrack on YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="site-footer__bar">
+        Fan-made · Not affiliated with Valve · <a href="#top">Back to top ↑</a>
+      </p>
+    </footer>
+
+    <audio id="bgm" src="music/theme.mp3" loop preload="metadata" hidden></audio>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
